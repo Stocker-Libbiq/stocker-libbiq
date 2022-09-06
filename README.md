@@ -1,6 +1,6 @@
-# Stocker
+# Stocker Libbiq
 
-command to run:
+Command to run:
 ```bash
 flutter pub get
 ```
