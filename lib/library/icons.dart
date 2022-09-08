@@ -1,24 +1,60 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
+class StockerIcon extends StatelessWidget {
+  final String icon;
+  final double size;
+  final Color? color;
 
+  const StockerIcon({
+    required this.icon,
+    this.size = StockerIconSize.small,
+    this.color,
+    Key? key
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SvgPicture.asset(
+      icon,
+      width: size,
+      height: size,
+      color: color,
+    );
+  }
+}
+
+class StockerIconSize {
+  static const double small = 16.0;
+  static const double medium = 24.0;
+  static const double large = 32.0;
+}
 
 class StockerIcons {
-  static String google = 'assets/icons/google.png';
-  static String arrowBack = 'assets/icons/arrow_back.svg';
-  static String houseFillo = 'assets/icons/house_FILLO.svg';
-  static String accountCircle = 'assest/icons/account_circle.svg';
-  static String close = 'assets/icons/close.svg';
-  static String search = 'assets/icons/search.svg';
-  static String logout = 'assets/icons/logout.svg';
-  static String locationOn = 'assets/icons/location_on.svg';
-  static String addCircle = 'assets/icons/add_circle.svg';
-  static String info = 'assets/icons/info.svg';
-  static String arrowCircleDown = 'assets/icons/arrow_circle_down.svg';
-  static String arrowCircleUp = 'assets/icons/arrow_circle_up.svg';
-  static String science = 'assets/icons/science.svg';
-  static String swapHoriz = 'assets/icons/swap_horiz.svg';
-  static String viewList = 'assets/icons/view_list.svg';
-  static String emergency = 'assets/icons/emergency.svg';
-  static String verifiedUser = 'assets/icons/verified_user.svg';
-  static String error = 'assets/icons/error.svg';
-  static String warning = 'assets/icons/warning.svg';
+  static Icons icons = const Icons();
+}
+
+class Icons {
+  const Icons();
+  final String _iconsPath = 'assets/icons';
+
+  String get google => '$_iconsPath/google.png';
+  String get arrowBack => '$_iconsPath/arrow_back.svg';
+  String get houseFillo => '$_iconsPath/house_FILLO.svg';
+  String get accountCircle => 'assest/icons/account_circle.svg';
+  String get close => '$_iconsPath/close.svg';
+  String get search => '$_iconsPath/search.svg';
+  String get logout => '$_iconsPath/logout.svg';
+  String get locationOn => '$_iconsPath/location_on.svg';
+  String get addCircle => '$_iconsPath/add_circle.svg';
+  String get info => '$_iconsPath/info.svg';
+  String get arrowCircleDown => '$_iconsPath/arrow_circle_down.svg';
+  String get arrowCircleUp => '$_iconsPath/arrow_circle_up.svg';
+  String get science => '$_iconsPath/science.svg';
+  String get swapHoriz => '$_iconsPath/swap_horiz.svg';
+  String get viewList => '$_iconsPath/view_list.svg';
+  String get emergency => '$_iconsPath/emergency.svg';
+  String get verifiedUser => '$_iconsPath/verified_user.svg';
+  String get error => '$_iconsPath/error.svg';
+  String get warning => '$_iconsPath/warning.svg';
 }
