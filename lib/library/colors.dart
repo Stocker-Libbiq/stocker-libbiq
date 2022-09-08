@@ -35,5 +35,4 @@ class StockerColors {
   static Color error = const Color(0xffd3302f);
   static Color errorLight = const Color(0xffff6659);
   static Color errorDark = const Color(0xff9a0007);
-
 }
