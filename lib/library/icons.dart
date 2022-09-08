@@ -1,3 +1,6 @@
+
+
+
 class StockerIcons {
   static String google = 'assets/icons/google.png';
   static String arrowBack = 'assets/icons/arrow_back.svg';
