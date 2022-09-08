@@ -25,7 +25,5 @@ jobs:
         run: flutter clean
       - name: Install Dependencies
         run: flutter pub get
-      - name: Generator
-        run: flutter packages pub run build_runner build --delete-conflicting-outputs
       - name: Build
         run: flutter build web
