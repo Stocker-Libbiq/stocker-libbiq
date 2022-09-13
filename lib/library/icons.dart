@@ -34,6 +34,7 @@ class StockerIcons {
   static Icons icons = const Icons();
 }
 
+// TODO: icons not found
 class Icons {
   const Icons();
   final String _iconsPath = 'assets/icons';
@@ -41,7 +42,7 @@ class Icons {
   String get google => '$_iconsPath/google.png';
   String get arrowBack => '$_iconsPath/arrow_back.svg';
   String get houseFillo => '$_iconsPath/house_FILLO.svg';
-  String get accountCircle => 'assest/icons/account_circle.svg';
+  String get accountCircle => '$_iconsPath/account_circle.svg';
   String get close => '$_iconsPath/close.svg';
   String get search => '$_iconsPath/search.svg';
   String get logout => '$_iconsPath/logout.svg';
