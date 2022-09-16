@@ -34,10 +34,3 @@ jobs:
         with:
           name: flutter-build
           path: build/web
-      - name: Deploy
-        uses:
-          jsmrcaga/action-netlify-deploy@v1.8.0
-        with:
-          publish: build/web
-          auth: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          site_id: ${{ secrets.NETLIFY_SITE_ID }}
