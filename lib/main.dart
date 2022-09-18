@@ -1,5 +1,6 @@
+import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
-import 'package:stocker/routes/routes.dart';
+import 'package:stocker/routes/main_routes.dart';
 
 void main() => runApp(const MyApp());
 
@@ -8,11 +9,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    const String appName = 'Stocker';
+    
+    return MaterialApp.router(
       debugShowCheckedModeBanner: true,
-      title: 'Stocker App',
-      routes: StockerRoutes.routes,
-      initialRoute: '/home',      
+      title: appName,
+      routeInformationParser: BeamerParser(),
+      routerDelegate: mainRoutes,  
     );
   }
 }

@@ -8,7 +8,13 @@ class StockerActions extends StatelessWidget {
   final String iconText;
   final VoidCallback onPressed;
 
-  const StockerActions({super.key});
+  const StockerActions({
+    required this.text,
+    required this.icon,
+    required this.iconText,
+    required this.onPressed,
+    super.key
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -20,11 +26,11 @@ class StockerActions extends StatelessWidget {
         children: <Widget>[
           IconButton(
             icon: StockerIcon(
-              icon: StockerIcons.add,
+              icon: StockerIcons.icons.addCircle,
             ),
             onPressed: () {},
           ),
-          Text('Add'),
+          const Text('Add'),
         ],
       ),
     );
