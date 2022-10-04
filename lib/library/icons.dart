@@ -34,7 +34,6 @@ class StockerIcons {
   static Icons icons = const Icons();
 }
 
-// TODO: icons not found
 class Icons {
   const Icons();
   final String _iconsPath = 'assets/icons';
