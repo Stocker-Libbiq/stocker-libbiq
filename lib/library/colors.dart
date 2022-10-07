@@ -2,37 +2,37 @@ import 'package:flutter/material.dart';
 
 class StockerColors {
   // primary colors
-  static Color primary = const Color(0xff2979FF);
-  static Color primaryLight = const Color(0xff75a7ff);
-  static Color primaryDark = const Color(0xff004ecb);
+  static const Color blue100 = Color(0xFF75A7FF);
+  static const Color blue200 = Color(0xFF2979FF);
+  static const Color blue300 = Color(0xFF004ECB);
 
   // background
-  static Color backgroundContent = const Color(0xffF5F6FA);
-  static Color backgroundLight = const Color(0xffffffff);
-  static Color backgroundDark = const Color(0xffc2c3c7);
+  static const Color gris100 = Color(0xffF5F6FA);
+  static const Color gris200 = Color(0xffffffff);
+  static const Color gris300 = Color(0xffc2c3c7);
 
   // background dark
-  static Color backgroundRevert = const Color(0xff212121);
-  static Color backgroundRevertLight = const Color(0xff484848);
-  static Color backgroundRevertDark = const Color(0xff000000);
-  
+  static const Color negro100 = Color(0xff212121);
+  static const Color negro200 = Color(0xff484848);
+  static const Color negro300 = Color(0xff000000);
+
   // success
-  static Color success = const Color(0xff388e3c);
-  static Color successLight = const Color(0xff6abf69);
-  static Color successDark = const Color(0xff00600f);
+  static const Color verde100 = Color(0xff388e3c);
+  static const Color verde200 = Color(0xff6abf69);
+  static const Color verde300 = Color(0xff00600f);
 
   // info
-  static Color info = const Color(0xff0288d1);
-  static Color infoLight = const Color(0xff5eb8ff);
-  static Color infoDark = const Color(0xff005b9f);
+  static const Color blueInfo100 = Color(0xff0288d1);
+  static const Color blueInfo200 = Color(0xff5eb8ff);
+  static const Color blueInfo300 = Color(0xff005b9f);
 
   // warning
-  static Color warning = const Color(0xfff57d01);
-  static Color warningLight = const Color(0xffffae42);
-  static Color warningDark = const Color(0xffbb4e00);
+  static const Color naranja100 = Color(0xfff57d01);
+  static const Color naranja200 = Color(0xffffae42);
+  static const Color naranja300 = Color(0xffbb4e00);
 
   // error
-  static Color error = const Color(0xffd3302f);
-  static Color errorLight = const Color(0xffff6659);
-  static Color errorDark = const Color(0xff9a0007);
+  static const Color rojo100 = Color(0xffd3302f);
+  static const Color rojo200 = Color(0xffff6659);
+  static const Color rojo300 = Color(0xff9a0007);
 }
