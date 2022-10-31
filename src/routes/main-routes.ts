@@ -1,3 +1,0 @@
-class MainRoutes {
-  static 
-}

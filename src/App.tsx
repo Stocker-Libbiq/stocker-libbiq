@@ -1,8 +1,9 @@
-import HomePage from './pages/HomePage';
-function App() {
+import './App.css'
+
+function App (): JSX.Element {
   return (
-    <HomePage/>
-  );
+    <h1>App</h1>
+  )
 }
 
-export default App;
+export default App
